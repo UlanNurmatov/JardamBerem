@@ -19,6 +19,7 @@
 		FFC210AA210F3D0D00C99671 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210A9210F3D0D00C99671 /* ServerManager.swift */; };
 		FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AB210F3D1B00C99671 /* Constants.swift */; };
 		FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AD210F3D2A00C99671 /* Citites.swift */; };
+		FFC210B0210F79A700C99671 /* Charities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AF210F79A700C99671 /* Charities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FFC210A9210F3D0D00C99671 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		FFC210AB210F3D1B00C99671 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFC210AD210F3D2A00C99671 /* Citites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citites.swift; sourceTree = "<group>"; };
+		FFC210AF210F79A700C99671 /* Charities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				FFC210AD210F3D2A00C99671 /* Citites.swift */,
 				79026A5C210F549900953146 /* Categories.swift */,
+				FFC210AF210F79A700C99671 /* Charities.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				FFC210AA210F3D0D00C99671 /* ServerManager.swift in Sources */,
 				79026A5D210F549900953146 /* Categories.swift in Sources */,
 				FFC21090210F3BF200C99671 /* ViewController.swift in Sources */,
+				FFC210B0210F79A700C99671 /* Charities.swift in Sources */,
 				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
