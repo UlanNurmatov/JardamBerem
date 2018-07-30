@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17C1517C69F0FD42F8408F14 /* Pods_JardamBeremApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */; };
+		FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108D210F3BF200C99671 /* AppDelegate.swift */; };
+		FFC21090210F3BF200C99671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108F210F3BF200C99671 /* ViewController.swift */; };
+		FFC21093210F3BF200C99671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC21091210F3BF200C99671 /* Main.storyboard */; };
+		FFC21095210F3BF200C99671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC21094210F3BF200C99671 /* Assets.xcassets */; };
+		FFC21098210F3BF200C99671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC21096210F3BF200C99671 /* LaunchScreen.storyboard */; };
+		FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210A5210F3CF200C99671 /* HTTPRequestManager.swift */; };
+		FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210A7210F3D0100C99671 /* HTTPStatusCode.swift */; };
+		FFC210AA210F3D0D00C99671 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210A9210F3D0D00C99671 /* ServerManager.swift */; };
+		FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AB210F3D1B00C99671 /* Constants.swift */; };
+		FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AD210F3D2A00C99671 /* Citites.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		484B3684E083443F7A9B0EAB /* Pods-JardamBeremApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp.debug.xcconfig"; sourceTree = "<group>"; };
+		73D090A0878FBB02A77AFE11 /* Pods-JardamBeremApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp.release.xcconfig"; sourceTree = "<group>"; };
+		CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC2108A210F3BF100C99671 /* JardamBeremApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JardamBeremApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFC2108D210F3BF200C99671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFC2108F210F3BF200C99671 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FFC21092210F3BF200C99671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFC21094210F3BF200C99671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFC21097210F3BF200C99671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFC21099210F3BF200C99671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFC210A5210F3CF200C99671 /* HTTPRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestManager.swift; sourceTree = "<group>"; };
+		FFC210A7210F3D0100C99671 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		FFC210A9210F3D0D00C99671 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		FFC210AB210F3D1B00C99671 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FFC210AD210F3D2A00C99671 /* Citites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citites.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFC21087210F3BF100C99671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C1517C69F0FD42F8408F14 /* Pods_JardamBeremApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71AAD9E70AA0491FD9E04DE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				484B3684E083443F7A9B0EAB /* Pods-JardamBeremApp.debug.xcconfig */,
+				73D090A0878FBB02A77AFE11 /* Pods-JardamBeremApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEEBF425FDD7F94A13D2D2A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFC21081210F3BF100C99671 = {
+			isa = PBXGroup;
+			children = (
+				FFC2108C210F3BF200C99671 /* JardamBeremApp */,
+				FFC2108B210F3BF100C99671 /* Products */,
+				71AAD9E70AA0491FD9E04DE0 /* Pods */,
+				DEEBF425FDD7F94A13D2D2A5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFC2108B210F3BF100C99671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFC2108A210F3BF100C99671 /* JardamBeremApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC2108C210F3BF200C99671 /* JardamBeremApp */ = {
+			isa = PBXGroup;
+			children = (
+				FFC2108D210F3BF200C99671 /* AppDelegate.swift */,
+				FFC210A3210F3CAF00C99671 /* Storyboard's & Xibs */,
+				FFC2109F210F3C8300C99671 /* Network */,
+				FFC210A4210F3CBD00C99671 /* View Controllers */,
+				FFC210A1210F3C9400C99671 /* Models */,
+				FFC210A0210F3C8B00C99671 /* Helpers */,
+				FFC21094210F3BF200C99671 /* Assets.xcassets */,
+				FFC21096210F3BF200C99671 /* LaunchScreen.storyboard */,
+				FFC21099210F3BF200C99671 /* Info.plist */,
+			);
+			path = JardamBeremApp;
+			sourceTree = "<group>";
+		};
+		FFC2109F210F3C8300C99671 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FFC210A5210F3CF200C99671 /* HTTPRequestManager.swift */,
+				FFC210A7210F3D0100C99671 /* HTTPStatusCode.swift */,
+				FFC210A9210F3D0D00C99671 /* ServerManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FFC210A0210F3C8B00C99671 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FFC210AB210F3D1B00C99671 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FFC210A1210F3C9400C99671 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFC210AD210F3D2A00C99671 /* Citites.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFC210A3210F3CAF00C99671 /* Storyboard's & Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				FFC21091210F3BF200C99671 /* Main.storyboard */,
+			);
+			path = "Storyboard's & Xibs";
+			sourceTree = "<group>";
+		};
+		FFC210A4210F3CBD00C99671 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FFC2108F210F3BF200C99671 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFC21089210F3BF100C99671 /* JardamBeremApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFC2109C210F3BF200C99671 /* Build configuration list for PBXNativeTarget "JardamBeremApp" */;
+			buildPhases = (
+				84B5C94B745E100FA444543C /* [CP] Check Pods Manifest.lock */,
+				FFC21086210F3BF100C99671 /* Sources */,
+				FFC21087210F3BF100C99671 /* Frameworks */,
+				FFC21088210F3BF100C99671 /* Resources */,
+				1D4905FB366A012248A32B74 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JardamBeremApp;
+			productName = JardamBeremApp;
+			productReference = FFC2108A210F3BF100C99671 /* JardamBeremApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFC21082210F3BF100C99671 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Ulan Nurmatov";
+				TargetAttributes = {
+					FFC21089210F3BF100C99671 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FFC21085210F3BF100C99671 /* Build configuration list for PBXProject "JardamBeremApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFC21081210F3BF100C99671;
+			productRefGroup = FFC2108B210F3BF100C99671 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFC21089210F3BF100C99671 /* JardamBeremApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFC21088210F3BF100C99671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC21098210F3BF200C99671 /* LaunchScreen.storyboard in Resources */,
+				FFC21095210F3BF200C99671 /* Assets.xcassets in Resources */,
+				FFC21093210F3BF200C99671 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D4905FB366A012248A32B74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84B5C94B745E100FA444543C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JardamBeremApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFC21086210F3BF100C99671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFC210AA210F3D0D00C99671 /* ServerManager.swift in Sources */,
+				FFC21090210F3BF200C99671 /* ViewController.swift in Sources */,
+				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
+				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
+				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
+				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
+				FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFC21091210F3BF200C99671 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC21092210F3BF200C99671 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFC21096210F3BF200C99671 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFC21097210F3BF200C99671 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFC2109A210F3BF200C99671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFC2109B210F3BF200C99671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFC2109D210F3BF200C99671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484B3684E083443F7A9B0EAB /* Pods-JardamBeremApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38CYVY5AC9;
+				INFOPLIST_FILE = JardamBeremApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ulan.JardamBeremApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FFC2109E210F3BF200C99671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D090A0878FBB02A77AFE11 /* Pods-JardamBeremApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 38CYVY5AC9;
+				INFOPLIST_FILE = JardamBeremApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ulan.JardamBeremApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFC21085210F3BF100C99671 /* Build configuration list for PBXProject "JardamBeremApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC2109A210F3BF200C99671 /* Debug */,
+				FFC2109B210F3BF200C99671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFC2109C210F3BF200C99671 /* Build configuration list for PBXNativeTarget "JardamBeremApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFC2109D210F3BF200C99671 /* Debug */,
+				FFC2109E210F3BF200C99671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFC21082210F3BF100C99671 /* Project object */;
+}
