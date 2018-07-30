@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         ServerManager.shared.getCities(completion: printCities, error: printError)
     }
     
-    func printCities(cities: [City]) {
-        for i in cities {
+    func printCities(cities: CityResult) {
+        for i in cities.results {
             print(i.city_name ?? "empty")
         }
     }
