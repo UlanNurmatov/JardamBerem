@@ -9,6 +9,7 @@
 import Foundation
 
 class CityResult: Decodable {
+    var count : Int?
     var results: [City] = []
 }
 

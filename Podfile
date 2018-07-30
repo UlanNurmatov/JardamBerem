@@ -6,5 +6,7 @@ target 'JardamBeremApp' do
   use_frameworks!
 
   # Pods for JardamBeremApp
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 4.7'
+  pod 'SideMenu'
+  
 end

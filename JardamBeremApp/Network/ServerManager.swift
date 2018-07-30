@@ -11,13 +11,13 @@ import Foundation
 class ServerManager: HTTPRequestManager {
     static let shared = ServerManager()
     
-    func getCities(completion: @escaping ([City]) -> (), error: @escaping (String) -> ()) {
+    func getCities(completion: @escaping (CityResult) -> (), error: @escaping (String) -> ()) {
         self.get(endpoint: Constants.Network.EndPoint.cities, completion: { (data) in
             //TODO
             do {
                 guard let  data = data else { return }
                 let result = try JSONDecoder().decode(CityResult.self, from: data)
-                completion(result.results)
+                completion(result)
             }
             catch let errorMessage {
                 error(errorMessage.localizedDescription)
@@ -27,6 +27,21 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
-    
-    
+
+    func getCategories(cityID : String, completion : @escaping (CategoryResult) -> (), error : @escaping (String) -> ()) {
+        self.get(endpoint: "cities/\(cityID)/\(Constants.Network.EndPoint.categories)", completion: { (responce) in
+            
+            do {
+                guard let  data = responce else { return }
+                let result = try JSONDecoder().decode(CategoryResult.self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) {(errorMessage) in
+            error(errorMessage)
+        }
+    }
 }

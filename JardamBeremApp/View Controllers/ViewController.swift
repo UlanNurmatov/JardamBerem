@@ -8,21 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController : UIViewController {
     
+    var exampleCityId = "1"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCities(completion: printCities, error: printError)
+        ServerManager.shared.getCities(completion : printCities, error: printError)
+        ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
     }
     
-    func printCities(cities: [City]) {
-        for i in cities {
+    func printCities(cities : CityResult) {
+        for i in cities.results {
             print(i.city_name ?? "empty")
         }
     }
+    func printCategories(categories : CategoryResult){
+        for c in categories.results! {
+            print(c.category_name ?? "empty")
+        }
+    }
     
-    func printError(error: String) {
+    func printError(error : String) {
         print(error)
     }
     
