@@ -29,7 +29,7 @@ class ServerManager: HTTPRequestManager {
     }
 
     func getCategories(cityID : String, completion : @escaping (CategoryResult) -> (), error : @escaping (String) -> ()) {
-        self.get(endpoint: "\(cityID)/\(Constants.Network.EndPoint.categories)", completion: { (responce) in
+        self.get(endpoint: "cities/\(cityID)/\(Constants.Network.EndPoint.categories)", completion: { (responce) in
             
             do {
                 guard let  data = responce else { return }
