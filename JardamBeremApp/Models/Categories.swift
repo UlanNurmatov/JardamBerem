@@ -10,11 +10,14 @@ import Foundation
 
 
 class CategoryResult : Decodable {
-    let count : Int?
-    let results : [Category]?
+    var count : Int?
+    var results : [Category]? = []
 }
 
 class Category : Decodable {
-    let id : Int?
-    let category_name : String?
+    var id : Int?
+    var category_imgPath : String?
+    var category_imgPath_height : Int?
+    var category_imgPath_width : Int?
+    var category_name : String?
 }
