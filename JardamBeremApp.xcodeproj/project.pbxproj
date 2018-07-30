@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		17C1517C69F0FD42F8408F14 /* Pods_JardamBeremApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */; };
+		79026A5D210F549900953146 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A5C210F549900953146 /* Categories.swift */; };
 		FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108D210F3BF200C99671 /* AppDelegate.swift */; };
 		FFC21090210F3BF200C99671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108F210F3BF200C99671 /* ViewController.swift */; };
 		FFC21093210F3BF200C99671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC21091210F3BF200C99671 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		484B3684E083443F7A9B0EAB /* Pods-JardamBeremApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp.debug.xcconfig"; sourceTree = "<group>"; };
 		73D090A0878FBB02A77AFE11 /* Pods-JardamBeremApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp.release.xcconfig"; sourceTree = "<group>"; };
+		79026A5C210F549900953146 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC2108A210F3BF100C99671 /* JardamBeremApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JardamBeremApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC2108D210F3BF200C99671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FFC210AD210F3D2A00C99671 /* Citites.swift */,
+				79026A5C210F549900953146 /* Categories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC210AA210F3D0D00C99671 /* ServerManager.swift in Sources */,
+				79026A5D210F549900953146 /* Categories.swift in Sources */,
 				FFC21090210F3BF200C99671 /* ViewController.swift in Sources */,
 				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
