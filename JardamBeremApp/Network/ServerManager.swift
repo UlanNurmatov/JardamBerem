@@ -29,7 +29,7 @@ class ServerManager: HTTPRequestManager {
     }
 
     func getCategories(cityID : String, completion : @escaping (CategoryResult) -> (), error : @escaping (String) -> ()) {
-        self.get(endpoint: "cities/\(cityID)/\(Constants.Network.EndPoint.categories)", completion: { (responce) in
+        self.get(endpoint: "\(Constants.Network.EndPoint.categories)\(cityID)/categories/", completion: { (responce) in
             
             do {
                 guard let  data = responce else { return }
@@ -41,6 +41,22 @@ class ServerManager: HTTPRequestManager {
             }
             
         }) {(errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
+    func getCharities(completion: @escaping (CharityResults) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.charities, completion: { (data) in
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(CharityResults.self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
             error(errorMessage)
         }
     }

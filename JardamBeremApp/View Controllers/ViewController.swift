@@ -17,6 +17,7 @@ class ViewController : UIViewController {
         super.viewDidLoad()
         ServerManager.shared.getCities(completion : printCities, error: printError)
         ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
+        ServerManager.shared.getCharities(completion : printCharities, error: printError)
     }
     
     func printCities(cities : CityResult) {
@@ -31,6 +32,14 @@ class ViewController : UIViewController {
             print(c.category_name ?? "empty")
         }
         datamanager.categories = categories.results
+    }
+    
+    func printCharities(charities : CharityResults) {
+        for i in charities.results {
+            print(i.title ?? "empty")
+        }
+        datamanager.charities = charities.results
+        
     }
     
     func printError(error : String) {

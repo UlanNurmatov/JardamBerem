@@ -24,7 +24,7 @@ class HTTPRequestManager {
             return
         }
         
-        let apiUrl = "http://138.68.166.31:9000/api/" + endpoint
+        let apiUrl = "http://138.68.166.31:9000/" + endpoint
         
         
         let header: HTTPHeaders = [:]

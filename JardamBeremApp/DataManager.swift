@@ -13,4 +13,5 @@ class DataManager {
     static let manager = DataManager()
     var cities : [City]?
     var categories : [Category]?
+    var charities : [Charity]?
 }
