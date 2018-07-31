@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LanguageChooseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CityChooseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     let manager = DataManager.manager
 

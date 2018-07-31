@@ -11,7 +11,7 @@
 		79026A5D210F549900953146 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A5C210F549900953146 /* Categories.swift */; };
 		79026A61210F6EA600953146 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A60210F6EA600953146 /* DataManager.swift */; };
 		79B8D7B22110338000DEAE5C /* MaratStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */; };
-		79B8D7BA2110A30600DEAE5C /* LanguageChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7B92110A30600DEAE5C /* LanguageChooseViewController.swift */; };
+		79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */; };
 		79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */; };
 		79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */; };
 		FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108D210F3BF200C99671 /* AppDelegate.swift */; };
@@ -35,7 +35,7 @@
 		79026A5C210F549900953146 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		79026A60210F6EA600953146 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaratStoryboard.storyboard; sourceTree = "<group>"; };
-		79B8D7B92110A30600DEAE5C /* LanguageChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChooseViewController.swift; sourceTree = "<group>"; };
+		79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChooseViewController.swift; sourceTree = "<group>"; };
 		79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToRViewController.swift; sourceTree = "<group>"; };
 		CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,7 +80,7 @@
 		79B8D7B82110A2E500DEAE5C /* Marat */ = {
 			isa = PBXGroup;
 			children = (
-				79B8D7B92110A30600DEAE5C /* LanguageChooseViewController.swift */,
+				79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */,
 				79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */,
 				79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */,
 			);
@@ -172,8 +172,8 @@
 		FFC210A4210F3CBD00C99671 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				79B8D7B82110A2E500DEAE5C /* Marat */,
 				FFC2108F210F3BF200C99671 /* ViewController.swift */,
+				79B8D7B82110A2E500DEAE5C /* Marat */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,
 				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
-				79B8D7BA2110A30600DEAE5C /* LanguageChooseViewController.swift in Sources */,
+				79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */,
 				FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */,
 				FFC210B421108A3500C99671 /* Forum.swift in Sources */,
 			);

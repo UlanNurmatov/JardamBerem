@@ -33,6 +33,9 @@
                                 <state key="normal" title="Далее">
                                     <color key="titleColor" red="1" green="0.38014214819999997" blue="0.59309690410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QWT-bQ-wT3" kind="show" id="LxF-dz-MIK"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rvu-eX-xKP">
                                 <rect key="frame" x="21" y="547" width="51" height="31"/>
@@ -112,6 +115,9 @@
                                     <constraint firstAttribute="height" constant="30" id="grM-EK-hdS"/>
                                 </constraints>
                                 <state key="normal" title="Готово"/>
+                                <connections>
+                                    <segue destination="rH3-QY-GmP" kind="show" id="Ege-ki-stG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,12 +138,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h93-Lg-TG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="170"/>
+            <point key="canvasLocation" x="924" y="170"/>
         </scene>
-        <!--View Controller-->
+        <!--City Choose View Controller-->
         <scene sceneID="hzv-Es-TRO">
             <objects>
-                <viewController id="rH3-QY-GmP" sceneMemberID="viewController">
+                <viewController id="rH3-QY-GmP" customClass="CityChooseViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7h-YO-XCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cY-Gd-Qaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="179"/>
+            <point key="canvasLocation" x="1649" y="170"/>
         </scene>
     </scenes>
     <resources>
