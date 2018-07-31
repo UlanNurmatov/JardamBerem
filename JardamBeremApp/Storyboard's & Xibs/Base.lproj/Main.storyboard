@@ -22,6 +22,9 @@
                                 <rect key="frame" x="167" y="299" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Marat"/>
+                                <connections>
+                                    <action selector="MaratButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="g79-Cu-FM9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwO-NG-AQk">
                                 <rect key="frame" x="164" y="337" width="46" height="30"/>

@@ -14,11 +14,11 @@ class InitialViewController: UIViewController {
         super.viewDidLoad()
         
 
-        let firstTimeLoad : Bool = UserDefaults.standard.object(forKey: "isAgreesWithTOR") != nil
+        let firstTimeLoad : Bool = UserDefaults.standard.object(forKey: "isAgreesWithTOR") == nil
         
         if firstTimeLoad {
             let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)
-            let vc = board.instantiateViewController(withIdentifier: "TermsOfReference")
+            let vc = board.instantiateViewController(withIdentifier: "ToRVC")
             self.show(vc, sender: self)
         } else {
             let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)

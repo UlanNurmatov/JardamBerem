@@ -13,6 +13,7 @@
 		79B8D7B22110338000DEAE5C /* MaratStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */; };
 		79B8D7BA2110A30600DEAE5C /* LanguageChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7B92110A30600DEAE5C /* LanguageChooseViewController.swift */; };
 		79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */; };
+		79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */; };
 		FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108D210F3BF200C99671 /* AppDelegate.swift */; };
 		FFC21090210F3BF200C99671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2108F210F3BF200C99671 /* ViewController.swift */; };
 		FFC21093210F3BF200C99671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC21091210F3BF200C99671 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaratStoryboard.storyboard; sourceTree = "<group>"; };
 		79B8D7B92110A30600DEAE5C /* LanguageChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageChooseViewController.swift; sourceTree = "<group>"; };
 		79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToRViewController.swift; sourceTree = "<group>"; };
 		CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JardamBeremApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC2108A210F3BF100C99671 /* JardamBeremApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JardamBeremApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC2108D210F3BF200C99671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				79B8D7B92110A30600DEAE5C /* LanguageChooseViewController.swift */,
+				79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */,
 				79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */,
 			);
 			path = Marat;
@@ -299,6 +302,7 @@
 				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
+				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,
 				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
 				79B8D7BA2110A30600DEAE5C /* LanguageChooseViewController.swift in Sources */,
