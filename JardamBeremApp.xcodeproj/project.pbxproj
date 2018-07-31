@@ -22,6 +22,7 @@
 		FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AB210F3D1B00C99671 /* Constants.swift */; };
 		FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AD210F3D2A00C99671 /* Citites.swift */; };
 		FFC210B0210F79A700C99671 /* Charities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AF210F79A700C99671 /* Charities.swift */; };
+		FFC210B22110847E00C99671 /* UlanStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC210B12110847E00C99671 /* UlanStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FFC210AB210F3D1B00C99671 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFC210AD210F3D2A00C99671 /* Citites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citites.swift; sourceTree = "<group>"; };
 		FFC210AF210F79A700C99671 /* Charities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charities.swift; sourceTree = "<group>"; };
+		FFC210B12110847E00C99671 /* UlanStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UlanStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				FFC21091210F3BF200C99671 /* Main.storyboard */,
 				79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */,
+				FFC210B12110847E00C99671 /* UlanStoryboard.storyboard */,
 			);
 			path = "Storyboard's & Xibs";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC21098210F3BF200C99671 /* LaunchScreen.storyboard in Resources */,
+				FFC210B22110847E00C99671 /* UlanStoryboard.storyboard in Resources */,
 				FFC21095210F3BF200C99671 /* Assets.xcassets in Resources */,
 				FFC21093210F3BF200C99671 /* Main.storyboard in Resources */,
 				79B8D7B22110338000DEAE5C /* MaratStoryboard.storyboard in Resources */,
