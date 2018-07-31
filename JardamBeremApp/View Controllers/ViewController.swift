@@ -49,10 +49,15 @@ class ViewController : UIViewController {
             print(i.comment ?? "empty")
         }
         datamanager.forum = forum.results
-        
     }
     func printError(error : String) {
         print(error)
+    }
+    
+    @IBAction func MaratButtonTapped() {
+        let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)
+        let vc = board.instantiateInitialViewController()
+        self.show(vc!, sender: self)
     }
     
 }
