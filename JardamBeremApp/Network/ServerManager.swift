@@ -60,4 +60,20 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    
+    func getForum(completion: @escaping (ForumResults) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.forum, completion: { (data) in
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(ForumResults.self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
 }
