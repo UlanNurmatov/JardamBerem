@@ -26,6 +26,8 @@
 		FFC210B0210F79A700C99671 /* Charities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210AF210F79A700C99671 /* Charities.swift */; };
 		FFC210B22110847E00C99671 /* UlanStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC210B12110847E00C99671 /* UlanStoryboard.storyboard */; };
 		FFC210B421108A3500C99671 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210B321108A3500C99671 /* Forum.swift */; };
+		FFC210B72110B02300C99671 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210B62110B02300C99671 /* MainViewController.swift */; };
+		FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		FFC210AF210F79A700C99671 /* Charities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charities.swift; sourceTree = "<group>"; };
 		FFC210B12110847E00C99671 /* UlanStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UlanStoryboard.storyboard; sourceTree = "<group>"; };
 		FFC210B321108A3500C99671 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		FFC210B62110B02300C99671 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,10 +173,20 @@
 		FFC210A4210F3CBD00C99671 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FFC210B52110AACF00C99671 /* Ulan */,
 				79B8D7B82110A2E500DEAE5C /* Marat */,
 				FFC2108F210F3BF200C99671 /* ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FFC210B52110AACF00C99671 /* Ulan */ = {
+			isa = PBXGroup;
+			children = (
+				FFC210B62110B02300C99671 /* MainViewController.swift */,
+				FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */,
+			);
+			path = Ulan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +310,10 @@
 				79026A5D210F549900953146 /* Categories.swift in Sources */,
 				FFC21090210F3BF200C99671 /* ViewController.swift in Sources */,
 				FFC210B0210F79A700C99671 /* Charities.swift in Sources */,
+				FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */,
 				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
+				FFC210B72110B02300C99671 /* MainViewController.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
 				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
