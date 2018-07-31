@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="169.56521739130437"/>
         </scene>
-        <!--View Controller-->
+        <!--Language Choose View Controller-->
         <scene sceneID="Puz-ti-RGf">
             <objects>
-                <viewController storyboardIdentifier="LanguageChooseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QWT-bQ-wT3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LanguageChooseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QWT-bQ-wT3" customClass="LanguageChooseViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uve-h3-Vmh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -97,16 +97,6 @@
                                     <constraint firstAttribute="height" constant="128" id="nz7-h3-3pY"/>
                                     <constraint firstAttribute="width" constant="240" id="v58-Rm-kvl"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="u8f-P4-hR2">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u8f-P4-hR2" id="fcq-fD-ahl">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v18-c7-Zdr">
                                 <rect key="frame" x="60" y="617" width="255" height="30"/>
@@ -135,10 +125,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Esp-gO-2aT"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6Ho-U9-Cxf" id="6kS-vu-SP0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h93-Lg-TG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="170"/>
+            <point key="canvasLocation" x="942" y="170"/>
         </scene>
         <!--City Choose View Controller-->
         <scene sceneID="hzv-Es-TRO">
