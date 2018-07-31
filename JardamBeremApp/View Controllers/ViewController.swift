@@ -11,6 +11,7 @@ import UIKit
 class ViewController : UIViewController {
     
     var exampleCityId = "1"
+    var datamanager = DataManager.manager
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,11 +23,14 @@ class ViewController : UIViewController {
         for i in cities.results {
             print(i.city_name ?? "empty")
         }
+        datamanager.cities = cities.results
+        
     }
     func printCategories(categories : CategoryResult){
         for c in categories.results! {
             print(c.category_name ?? "empty")
         }
+        datamanager.categories = categories.results
     }
     
     func printError(error : String) {
