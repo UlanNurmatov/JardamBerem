@@ -31,6 +31,7 @@ class ViewController : UIViewController {
     func printCategories(categories : CategoryResult){
         for c in categories.results! {
             print(c.category_name ?? "empty")
+            print(c.category_imgPath ?? "empty")
         }
         datamanager.categories = categories.results
     }
@@ -56,6 +57,12 @@ class ViewController : UIViewController {
     
     @IBAction func MaratButtonTapped() {
         let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)
+        let vc = board.instantiateInitialViewController()
+        self.show(vc!, sender: self)
+    }
+    
+    @IBAction func UlanButtonTapped() {
+        let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
         let vc = board.instantiateInitialViewController()
         self.show(vc!, sender: self)
     }

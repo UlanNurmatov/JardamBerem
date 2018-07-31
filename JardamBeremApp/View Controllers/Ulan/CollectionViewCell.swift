@@ -10,4 +10,12 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var categoryTitle: UILabel!
+    
+    @IBOutlet weak var categoryImage: UIButton!
+    
+    func setCategoryTitle(catergory: Category) {
+        categoryTitle.text = catergory.category_name
+        
+    }
 }
