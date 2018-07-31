@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vL7-kn-9y4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zzB-8H-K1w">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,24 +12,9 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="Pqb-G4-oTi">
-            <objects>
-                <viewController id="vL7-kn-9y4" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m2E-bT-Vsw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="xzq-gq-epa"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ohz-cF-bMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-559" y="170"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="q4I-Z5-oTt">
             <objects>
-                <viewController id="zzB-8H-K1w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ToRVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zzB-8H-K1w" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pij-H3-9W4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +33,9 @@
                                 <state key="normal" title="Далее">
                                     <color key="titleColor" red="1" green="0.38014214819999997" blue="0.59309690410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="QWT-bQ-wT3" kind="show" id="LxF-dz-MIK"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rvu-eX-xKP">
                                 <rect key="frame" x="21" y="547" width="51" height="31"/>
@@ -80,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="169.56521739130437"/>
         </scene>
-        <!--View Controller-->
+        <!--Language Choose View Controller-->
         <scene sceneID="Puz-ti-RGf">
             <objects>
-                <viewController id="QWT-bQ-wT3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LanguageChooseVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QWT-bQ-wT3" customClass="LanguageChooseViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uve-h3-Vmh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,16 +97,6 @@
                                     <constraint firstAttribute="height" constant="128" id="nz7-h3-3pY"/>
                                     <constraint firstAttribute="width" constant="240" id="v58-Rm-kvl"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="u8f-P4-hR2">
-                                        <rect key="frame" x="0.0" y="28" width="240" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u8f-P4-hR2" id="fcq-fD-ahl">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v18-c7-Zdr">
                                 <rect key="frame" x="60" y="617" width="255" height="30"/>
@@ -127,6 +105,9 @@
                                     <constraint firstAttribute="height" constant="30" id="grM-EK-hdS"/>
                                 </constraints>
                                 <state key="normal" title="Готово"/>
+                                <connections>
+                                    <segue destination="rH3-QY-GmP" kind="show" id="Ege-ki-stG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -144,15 +125,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Esp-gO-2aT"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6Ho-U9-Cxf" id="6kS-vu-SP0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h93-Lg-TG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="170"/>
+            <point key="canvasLocation" x="942" y="170"/>
         </scene>
-        <!--View Controller-->
+        <!--City Choose View Controller-->
         <scene sceneID="hzv-Es-TRO">
             <objects>
-                <viewController id="rH3-QY-GmP" sceneMemberID="viewController">
+                <viewController id="rH3-QY-GmP" customClass="CityChooseViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d7h-YO-XCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cY-Gd-Qaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="179"/>
+            <point key="canvasLocation" x="1649" y="170"/>
         </scene>
     </scenes>
     <resources>
