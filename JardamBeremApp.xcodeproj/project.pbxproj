@@ -31,6 +31,7 @@
 		FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */; };
 		FFC210BD2110B3CC00C99671 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210BC2110B3CC00C99671 /* MainScreenViewController.swift */; };
 		FFC210C121122C1100C99671 /* AnnouncementsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210C021122C1100C99671 /* AnnouncementsCollectionViewCell.swift */; };
+		FFC210C32112429A00C99671 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210C22112429A00C99671 /* Announcement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FFC210BC2110B3CC00C99671 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		FFC210C021122C1100C99671 /* AnnouncementsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFC210C22112429A00C99671 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				FFC210AD210F3D2A00C99671 /* Citites.swift */,
 				FFC210B321108A3500C99671 /* Forum.swift */,
 				79026A5C210F549900953146 /* Categories.swift */,
+				FFC210C22112429A00C99671 /* Announcement.swift */,
 				FFC210AF210F79A700C99671 /* Charities.swift */,
 			);
 			path = Models;
@@ -327,6 +330,7 @@
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
 				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,
+				FFC210C32112429A00C99671 /* Announcement.swift in Sources */,
 				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
 				79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */,

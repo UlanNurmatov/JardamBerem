@@ -22,8 +22,12 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return DataManager.manager.categories!.count
-    }
+        if(collectionView == self.collectionView){
+            return DataManager.manager.categories!.count
+        } else {
+            return (DataManager.manager.announcements!.count)
+        }
+     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as! CollectionViewCell
