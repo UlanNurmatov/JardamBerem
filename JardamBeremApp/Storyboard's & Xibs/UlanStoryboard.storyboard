@@ -95,20 +95,13 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7gv-G0-Gqt">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7gv-G0-Gqt" customClass="AnnouncementsCollectionViewCell" customModule="JardamBeremApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="172" height="190"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="190"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EA4-ji-2qk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="172" height="190"/>
-                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                                    <connections>
-                                                        <segue destination="WQd-Ll-1hq" kind="embed" id="1JY-dt-X5V"/>
-                                                    </connections>
-                                                </containerView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g57-NH-cvm">
                                                     <rect key="frame" x="0.0" y="0.0" width="172" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -122,6 +115,10 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="image" destination="g57-NH-cvm" id="xia-u0-G0x"/>
+                                            <outlet property="label" destination="f9Y-oi-X3n" id="mUQ-Xu-6OV"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -130,6 +127,7 @@
                         <viewLayoutGuide key="safeArea" id="mrk-7P-bon"/>
                     </view>
                     <connections>
+                        <outlet property="announcementsCollectionView" destination="w7e-e4-7hr" id="m6I-Fl-vIa"/>
                         <outlet property="collectionView" destination="AP7-gG-GKH" id="whb-qC-K8h"/>
                     </connections>
                 </viewController>
@@ -142,7 +140,7 @@
             <objects>
                 <viewController id="WQd-Ll-1hq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A3h-Qz-vYu">
-                        <rect key="frame" x="0.0" y="0.0" width="172" height="190"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>

@@ -30,6 +30,7 @@
 		FFC210B421108A3500C99671 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210B321108A3500C99671 /* Forum.swift */; };
 		FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */; };
 		FFC210BD2110B3CC00C99671 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210BC2110B3CC00C99671 /* MainScreenViewController.swift */; };
+		FFC210C121122C1100C99671 /* AnnouncementsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210C021122C1100C99671 /* AnnouncementsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		FFC210B321108A3500C99671 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		FFC210BC2110B3CC00C99671 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		FFC210C021122C1100C99671 /* AnnouncementsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				FFC210B82110B0AA00C99671 /* CollectionViewCell.swift */,
 				FFC210BC2110B3CC00C99671 /* MainScreenViewController.swift */,
+				FFC210C021122C1100C99671 /* AnnouncementsCollectionViewCell.swift */,
 			);
 			path = Ulan;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				FFC210B0210F79A700C99671 /* Charities.swift in Sources */,
 				FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */,
 				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
+				FFC210C121122C1100C99671 /* AnnouncementsCollectionViewCell.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
 				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,

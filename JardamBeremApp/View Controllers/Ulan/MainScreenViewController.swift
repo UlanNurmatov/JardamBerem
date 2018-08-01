@@ -12,6 +12,7 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
 
     
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var announcementsCollectionView: UICollectionView!
 
     
     override func viewDidLoad() {
