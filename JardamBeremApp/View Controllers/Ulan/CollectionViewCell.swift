@@ -7,15 +7,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var categoryTitle: UILabel!
     
-    @IBOutlet weak var categoryImage: UIButton!
+    @IBOutlet weak var categoryImage: UIImageView!
     
     func setCategoryTitle(catergory: Category) {
         categoryTitle.text = catergory.category_name
         
-    }
+        if catergory.category_imgPath != nil {
+            let url = URL(string: catergory.category_imgPath!)
+            categoryImage.kf.setImage(with: url)
+        } else {
+            categoryImage.image = #imageLiteral(resourceName: "Group 6")
+        }
+}
 }
