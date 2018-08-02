@@ -52,6 +52,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBV-Uh-HO4">
+                                <rect key="frame" x="160" y="446" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Charity"/>
+                                <connections>
+                                    <segue destination="bwc-AQ-9LR" kind="show" id="WMU-2i-gpF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -224,6 +232,40 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HbI-B0-b6f">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="aob-4q-H3l" customClass="CharityTableViewCell" customModule="JardamBeremApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aob-4q-H3l" id="YMW-B1-h0h">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburger (3)" translatesAutoresizingMaskIntoConstraints="NO" id="5FH-nq-47Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75e-my-Vjl">
+                                                    <rect key="frame" x="166" y="68" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="75e-my-Vjl" firstAttribute="centerX" secondItem="YMW-B1-h0h" secondAttribute="centerX" id="3lW-lp-uql"/>
+                                                <constraint firstItem="75e-my-Vjl" firstAttribute="bottom" secondItem="YMW-B1-h0h" secondAttribute="bottomMargin" id="I8g-Ax-pAa"/>
+                                                <constraint firstAttribute="trailing" secondItem="5FH-nq-47Q" secondAttribute="trailing" id="Pak-g8-CIJ"/>
+                                                <constraint firstItem="5FH-nq-47Q" firstAttribute="top" secondItem="YMW-B1-h0h" secondAttribute="top" id="crN-N9-4sn"/>
+                                                <constraint firstItem="5FH-nq-47Q" firstAttribute="leading" secondItem="YMW-B1-h0h" secondAttribute="leading" id="g6G-8V-ToJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="5FH-nq-47Q" secondAttribute="bottom" constant="28.5" id="txg-6t-lTi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.48697500405852162" green="0.87965973984771573" blue="0.76782843152037261" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="imgView" destination="5FH-nq-47Q" id="KAP-td-Av2"/>
+                                            <outlet property="titleLabel" destination="75e-my-Vjl" id="Arv-YX-1yo"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -238,10 +280,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivD-ve-OcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2322" y="170"/>
+            <point key="canvasLocation" x="2320.8000000000002" y="169.56521739130437"/>
         </scene>
     </scenes>
     <resources>
+        <image name="hamburger (3)" width="128" height="128"/>
         <image name="menu" width="64" height="64"/>
         <image name="notAgreed" width="64" height="64"/>
     </resources>
