@@ -21,3 +21,7 @@ class Category : Decodable {
     var category_imgPath_width : Int?
     var category_name : String?
 }
+
+
+
+
