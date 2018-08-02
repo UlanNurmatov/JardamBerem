@@ -17,17 +17,11 @@ class AnnouncementsCollectionViewCell: UICollectionViewCell {
     var announcement: Announcement?
     
     func setAnnouncement(announcement: Announcement) {
-        self.announcement = announcement
-        
-    }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        guard let announcement = announcement else {
+        label.text = announcement.title
+        guard let imagePath = announcement.imgPath else {
             return
         }
-        label.text = announcement.title
-        
-        let url = URL(string: announcement.imgPath!)
+        let url = URL(string: imagePath)
         image.kf.setImage(with: url)
     }
 }

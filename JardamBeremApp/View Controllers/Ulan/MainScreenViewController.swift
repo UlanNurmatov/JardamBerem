@@ -19,9 +19,6 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         collectionView.dataSource = self
         announcementsCollectionView.dataSource = self
-        
-         announcementsCollectionView.register(UINib.init(nibName: "AnnouncementCell", bundle: nil), forCellWithReuseIdentifier: "AnnouncementCell")
-        announcementsCollectionView.register(AnnouncementsCollectionViewCell.self, forCellWithReuseIdentifier: "AnnouncementCell")
        
         
 

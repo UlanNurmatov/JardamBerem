@@ -16,7 +16,7 @@ class CategoryResult : Decodable {
 
 class Category : Decodable {
     var id : Int?
-    var category_imgPath : String? = "https://psv4.userapi.com/c848036/u11618358/docs/d11/593a5cc72937/Group_6.png"
+    var category_imgPath : String? 
     var category_imgPath_height : Int?
     var category_imgPath_width : Int?
     var category_name : String?
