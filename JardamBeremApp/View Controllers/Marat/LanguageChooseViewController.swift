@@ -11,6 +11,7 @@ import UIKit
 class LanguageChooseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView : UITableView!
+    @IBOutlet weak var continueButton : UIButton!
     
     let langs = ["Русский", "Кыргызский"]
     
@@ -20,6 +21,8 @@ class LanguageChooseViewController: UIViewController, UITableViewDataSource, UIT
 
         tableView.dataSource = self
         tableView.delegate = self
+        
+        continueButton.isHidden = true
     }
 
 
@@ -34,5 +37,7 @@ class LanguageChooseViewController: UIViewController, UITableViewDataSource, UIT
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DataManager.manager.selectedLang = self.langs[indexPath.row]
+        self.continueButton.isHidden = false
     }
+    
 }

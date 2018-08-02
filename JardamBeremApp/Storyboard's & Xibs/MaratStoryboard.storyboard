@@ -48,7 +48,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-I5-YDF">
                                 <rect key="frame" x="16" y="36" width="343" height="340"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Данная Политика конфиденциальности и защиты персональных данных (далее - «Политика») устанавливает порядок осуществления Компанией обработки персональных данных, виды собираемых персональных данных, цели использования таких персональных данных, взаимодействие Компании с третьими лицами, меры безопасности для защиты персональных данных, условия доступа к персональным данным, а также контактную информацию для пользователя относительно получения доступа, внесения изменений, блокирования или удаления своих персональных данных и обращения с любыми вопросами, которые могут возникнуть у Вас относительно практики защиты персональных данных.</mutableString>
+                                <string key="text">Данная Политика конфиденциальности и защиты персональных данных (далее - «Политика») устанавливает порядок осуществления Компанией обработки персональных данных, виды собираемых персональных данных, цели использования таких персональных данных, взаимодействие Компании с третьими лицами, меры безопасности для защиты персональных данных, условия доступа к персональным данным, а также контактную информацию для пользователя относительно получения доступа, внесения изменений, блокирования или удаления своих персональных данных и обращения с любыми вопросами, которые могут возникнуть у Вас относительно практики защиты персональных данных.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -137,6 +137,7 @@
                         <viewLayoutGuide key="safeArea" id="Esp-gO-2aT"/>
                     </view>
                     <connections>
+                        <outlet property="continueButton" destination="v18-c7-Zdr" id="MIj-Lk-iP1"/>
                         <outlet property="tableView" destination="6Ho-U9-Cxf" id="6kS-vu-SP0"/>
                     </connections>
                 </viewController>
