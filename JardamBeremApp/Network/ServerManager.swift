@@ -76,4 +76,20 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    
+    func getAnnouncements(completion: @escaping (AnnouncementsResults) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.announcements, completion: { (data) in
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(AnnouncementsResults.self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
 }

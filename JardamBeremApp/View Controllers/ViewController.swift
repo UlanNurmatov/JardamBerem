@@ -19,6 +19,7 @@ class ViewController : UIViewController {
         ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
         ServerManager.shared.getCharities(completion : printCharities, error: printError)
         ServerManager.shared.getForum(completion : printForum, error: printError)
+        ServerManager.shared.getAnnouncements(completion: printAnnouncements, error: printError)
     }
     
     func printCities(cities : CityResult) {
@@ -51,6 +52,15 @@ class ViewController : UIViewController {
         }
         datamanager.forum = forum.results
     }
+    
+    func printAnnouncements(announcements : AnnouncementsResults) {
+        for i in announcements.results {
+            print(i.title ?? "empty")
+            print(i.description ?? "empty")
+        }
+        datamanager.announcements = announcements.results
+    }
+    
     func printError(error : String) {
         print(error)
     }

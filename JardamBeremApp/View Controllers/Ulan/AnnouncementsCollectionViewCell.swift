@@ -7,8 +7,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AnnouncementsCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var label: UILabel!
+    
+    
+    func setAnnouncement(anouncement: Announcement) {
+        label.text = anouncement.title
+        
+        let url = URL(string: anouncement.imgPath!)
+        image.kf.setImage(with: url)
+    }
 }
