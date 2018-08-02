@@ -14,8 +14,17 @@ class AnnouncementsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var label: UILabel!
     
+    var announcement: Announcement?
     
     func setAnnouncement(announcement: Announcement) {
+        self.announcement = announcement
+        
+    }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        guard let announcement = announcement else {
+            return
+        }
         label.text = announcement.title
         
         let url = URL(string: announcement.imgPath!)
