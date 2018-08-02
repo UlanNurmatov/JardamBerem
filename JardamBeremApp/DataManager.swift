@@ -11,6 +11,8 @@ import Foundation
 
 class DataManager {
     static let manager = DataManager()
+    var selectedLang : String?
+    var selectedCity : City?
     var cities : [City]?
     var categories : [Category]?
     var charities : [Charity]?

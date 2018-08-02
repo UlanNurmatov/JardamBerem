@@ -32,4 +32,7 @@ class LanguageChooseViewController: UIViewController, UITableViewDataSource, UIT
         cell.textLabel!.text = self.langs[indexPath.row]
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DataManager.manager.selectedLang = self.langs[indexPath.row]
+    }
 }
