@@ -13,6 +13,7 @@ class DataManager {
     static let manager = DataManager()
     var selectedLang : String?
     var selectedCity : City?
+    var selectedCharity : Charity?
     var cities : [City]?
     var categories : [Category]?
     var charities : [Charity]?

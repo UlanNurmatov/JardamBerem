@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CharityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,7 +26,10 @@ class CharityViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! CharityTableViewCell
+        let url = URL(string: DataManager.manager.charities![indexPath.row].imgPath!)
+        cell.imgView.kf.setImage(with: url)
+        cell.titleLabel.text = DataManager.manager.charities![indexPath.row].title!
         return cell
     }
 
