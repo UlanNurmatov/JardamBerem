@@ -10,6 +10,7 @@
 		17C1517C69F0FD42F8408F14 /* Pods_JardamBeremApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */; };
 		79026A5D210F549900953146 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A5C210F549900953146 /* Categories.swift */; };
 		79026A61210F6EA600953146 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A60210F6EA600953146 /* DataManager.swift */; };
+		79737D3121133DE300407095 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3021133DE300407095 /* CharityViewController.swift */; };
 		79B8D7B22110338000DEAE5C /* MaratStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */; };
 		79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */; };
 		79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */; };
@@ -39,6 +40,7 @@
 		73D090A0878FBB02A77AFE11 /* Pods-JardamBeremApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp.release.xcconfig"; sourceTree = "<group>"; };
 		79026A5C210F549900953146 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		79026A60210F6EA600953146 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		79737D3021133DE300407095 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
 		79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaratStoryboard.storyboard; sourceTree = "<group>"; };
 		79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChooseViewController.swift; sourceTree = "<group>"; };
 		79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				79B8D7BF2110AF7700DEAE5C /* LanguageChooseViewController.swift */,
 				79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */,
 				79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */,
+				79737D3021133DE300407095 /* CharityViewController.swift */,
 			);
 			path = Marat;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */,
 				79026A5D210F549900953146 /* Categories.swift in Sources */,
 				79B8D7C02110AF7700DEAE5C /* LanguageChooseViewController.swift in Sources */,
+				79737D3121133DE300407095 /* CharityViewController.swift in Sources */,
 				FFC21090210F3BF200C99671 /* ViewController.swift in Sources */,
 				FFC210B0210F79A700C99671 /* Charities.swift in Sources */,
 				FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */,
