@@ -18,6 +18,12 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
+        announcementsCollectionView.dataSource = self
+        
+         announcementsCollectionView.register(UINib.init(nibName: "AnnouncementCell", bundle: nil), forCellWithReuseIdentifier: "AnnouncementCell")
+        announcementsCollectionView.register(AnnouncementsCollectionViewCell.self, forCellWithReuseIdentifier: "AnnouncementCell")
+       
+        
 
     }
     
@@ -30,7 +36,7 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
      }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        if(collectionView == self.collectionView) {
+        if (collectionView == self.collectionView) {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as! CollectionViewCell
         cell.setCategoryTitle(catergory: DataManager.manager.categories![indexPath.item])
             return cell
@@ -40,13 +46,7 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
             return cell
         }
     }
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    
+   
 
    
 }
