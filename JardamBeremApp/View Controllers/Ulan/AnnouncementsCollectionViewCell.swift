@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class AnnouncementsCollectionViewCell: UICollectionViewCell {
     
@@ -15,6 +16,9 @@ class AnnouncementsCollectionViewCell: UICollectionViewCell {
     
     
     func setAnnouncement(anouncement: Announcement) {
+        label.text = anouncement.title
         
+        let url = URL(string: anouncement.imgPath!)
+        image.kf.setImage(with: url)
     }
 }
