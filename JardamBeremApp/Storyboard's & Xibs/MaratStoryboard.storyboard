@@ -11,23 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ToR View Controller-->
         <scene sceneID="q4I-Z5-oTt">
             <objects>
-                <viewController storyboardIdentifier="ToRVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zzB-8H-K1w" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ToRVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zzB-8H-K1w" customClass="ToRViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pij-H3-9W4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cогласен(-на) с Политикой конфеденциальности и Соглашением" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1D-K2-9Pu">
-                                <rect key="frame" x="80" y="542" width="279" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="DWj-PD-DbF"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95M-6k-3Y7">
                                 <rect key="frame" x="165" y="623" width="45" height="30"/>
                                 <state key="normal" title="Далее">
@@ -37,32 +28,52 @@
                                     <segue destination="QWT-bQ-wT3" kind="show" id="LxF-dz-MIK"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rvu-eX-xKP">
-                                <rect key="frame" x="21" y="547" width="51" height="31"/>
-                                <color key="onTintColor" red="1" green="0.70474129050000001" blue="0.90558048599999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </switch>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-I5-YDF">
-                                <rect key="frame" x="16" y="20" width="343" height="346"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cогласен(-на) с Политикой конфеденциальности и Соглашением" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1D-K2-9Pu">
+                                <rect key="frame" x="64" y="559" width="295" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zah-oW-OlV">
+                                <rect key="frame" x="16" y="557" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="hNm-4E-PMc"/>
+                                    <constraint firstAttribute="height" constant="40" id="yZd-0Q-LO8"/>
+                                </constraints>
+                                <state key="normal" image="notAgreed"/>
+                                <connections>
+                                    <action selector="isAgreedButtonTapped" destination="zzB-8H-K1w" eventType="touchUpInside" id="p8U-dd-2L8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-I5-YDF">
+                                <rect key="frame" x="16" y="36" width="343" height="340"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Данная Политика конфиденциальности и защиты персональных данных (далее - «Политика») устанавливает порядок осуществления Компанией обработки персональных данных, виды собираемых персональных данных, цели использования таких персональных данных, взаимодействие Компании с третьими лицами, меры безопасности для защиты персональных данных, условия доступа к персональным данным, а также контактную информацию для пользователя относительно получения доступа, внесения изменений, блокирования или удаления своих персональных данных и обращения с любыми вопросами, которые могут возникнуть у Вас относительно практики защиты персональных данных.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <mutableString key="text">Данная Политика конфиденциальности и защиты персональных данных (далее - «Политика») устанавливает порядок осуществления Компанией обработки персональных данных, виды собираемых персональных данных, цели использования таких персональных данных, взаимодействие Компании с третьими лицами, меры безопасности для защиты персональных данных, условия доступа к персональным данным, а также контактную информацию для пользователя относительно получения доступа, внесения изменений, блокирования или удаления своих персональных данных и обращения с любыми вопросами, которые могут возникнуть у Вас относительно практики защиты персональных данных.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="95M-6k-3Y7" firstAttribute="top" secondItem="j1D-K2-9Pu" secondAttribute="bottom" constant="41" id="3Lk-aa-6F5"/>
+                            <constraint firstItem="2vd-I5-YDF" firstAttribute="top" secondItem="CON-rw-vwe" secondAttribute="top" constant="16" id="3yX-97-WVQ"/>
                             <constraint firstItem="CON-rw-vwe" firstAttribute="bottom" secondItem="95M-6k-3Y7" secondAttribute="bottom" constant="14" id="5IQ-5R-HzP"/>
-                            <constraint firstItem="Rvu-eX-xKP" firstAttribute="leading" secondItem="pij-H3-9W4" secondAttribute="leading" constant="21" id="IBy-oa-Uk7"/>
-                            <constraint firstItem="j1D-K2-9Pu" firstAttribute="leading" secondItem="Rvu-eX-xKP" secondAttribute="trailing" constant="10" id="V9s-fu-0Qy"/>
-                            <constraint firstItem="CON-rw-vwe" firstAttribute="trailing" secondItem="j1D-K2-9Pu" secondAttribute="trailing" constant="16" id="XNW-wT-oSR"/>
+                            <constraint firstItem="zah-oW-OlV" firstAttribute="centerY" secondItem="j1D-K2-9Pu" secondAttribute="centerY" id="Acw-Xb-GSE"/>
+                            <constraint firstItem="2vd-I5-YDF" firstAttribute="leading" secondItem="CON-rw-vwe" secondAttribute="leading" constant="16" id="IQq-tt-dm4"/>
+                            <constraint firstItem="CON-rw-vwe" firstAttribute="trailing" secondItem="2vd-I5-YDF" secondAttribute="trailing" constant="16" id="Ihk-pQ-r2x"/>
+                            <constraint firstItem="zah-oW-OlV" firstAttribute="top" secondItem="2vd-I5-YDF" secondAttribute="bottom" constant="181" id="RbC-tm-NbW"/>
+                            <constraint firstItem="CON-rw-vwe" firstAttribute="bottom" secondItem="zah-oW-OlV" secondAttribute="bottom" constant="70" id="h0G-Eo-q0R"/>
+                            <constraint firstItem="zah-oW-OlV" firstAttribute="leading" secondItem="CON-rw-vwe" secondAttribute="leading" constant="16" id="hLt-IF-J6h"/>
+                            <constraint firstItem="j1D-K2-9Pu" firstAttribute="leading" secondItem="zah-oW-OlV" secondAttribute="trailing" constant="8" id="o8J-XG-yOT"/>
                             <constraint firstItem="95M-6k-3Y7" firstAttribute="centerX" secondItem="pij-H3-9W4" secondAttribute="centerX" id="pq7-U0-e5D"/>
-                            <constraint firstItem="j1D-K2-9Pu" firstAttribute="centerY" secondItem="Rvu-eX-xKP" secondAttribute="centerY" id="z1j-m2-VnV"/>
+                            <constraint firstItem="CON-rw-vwe" firstAttribute="trailing" secondItem="j1D-K2-9Pu" secondAttribute="trailing" constant="16" id="t8X-8A-4Do"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CON-rw-vwe"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="95M-6k-3Y7" id="MAL-c2-irE"/>
+                        <outlet property="isAgreedButton" destination="zah-oW-OlV" id="UXJ-S7-hpv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCG-Mc-ZrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,5 +215,6 @@
     </scenes>
     <resources>
         <image name="menu" width="64" height="64"/>
+        <image name="notAgreed" width="64" height="64"/>
     </resources>
 </document>
