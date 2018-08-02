@@ -8,5 +8,5 @@ target 'JardamBeremApp' do
   # Pods for JardamBeremApp
   pod 'Alamofire', '~> 4.7'
   pod 'SideMenu'
-  
+  pod 'Kingfisher'
 end
