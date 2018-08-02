@@ -15,10 +15,10 @@ class AnnouncementsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     
     
-    func setAnnouncement(anouncement: Announcement) {
-        label.text = anouncement.title
+    func setAnnouncement(announcement: Announcement) {
+        label.text = announcement.title
         
-        let url = URL(string: anouncement.imgPath!)
+        let url = URL(string: announcement.imgPath!)
         image.kf.setImage(with: url)
     }
 }

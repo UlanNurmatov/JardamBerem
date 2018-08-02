@@ -29,10 +29,16 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
         }
      }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
+        if(collectionView == self.collectionView) {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoriesCell", for: indexPath) as! CollectionViewCell
         cell.setCategoryTitle(catergory: DataManager.manager.categories![indexPath.item])
-        return cell
+            return cell
+        } else {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AnnouncementCell", for: indexPath) as! AnnouncementsCollectionViewCell
+            cell.setAnnouncement(announcement: DataManager.manager.announcements![indexPath.item])
+            return cell
+        }
     }
     
 

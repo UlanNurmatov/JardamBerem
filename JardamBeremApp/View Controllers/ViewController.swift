@@ -55,7 +55,9 @@ class ViewController : UIViewController {
     
     func printAnnouncements(announcements : AnnouncementsResults) {
         for i in announcements.results {
-            print(i.title ?? "empty")
+            print("TITLE")
+            print((i.title) ?? "empty")
+            print("DESCRIPTION")
             print(i.description ?? "empty")
         }
         datamanager.announcements = announcements.results
