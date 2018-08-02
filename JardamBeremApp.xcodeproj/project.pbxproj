@@ -11,6 +11,7 @@
 		79026A5D210F549900953146 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A5C210F549900953146 /* Categories.swift */; };
 		79026A61210F6EA600953146 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A60210F6EA600953146 /* DataManager.swift */; };
 		79737D3121133DE300407095 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3021133DE300407095 /* CharityViewController.swift */; };
+		79737D3321133F4D00407095 /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3221133F4D00407095 /* CharityTableViewCell.swift */; };
 		79B8D7B22110338000DEAE5C /* MaratStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */; };
 		79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */; };
 		79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */; };
@@ -41,6 +42,7 @@
 		79026A5C210F549900953146 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		79026A60210F6EA600953146 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		79737D3021133DE300407095 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
+		79737D3221133F4D00407095 /* CharityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaratStoryboard.storyboard; sourceTree = "<group>"; };
 		79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChooseViewController.swift; sourceTree = "<group>"; };
 		79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */,
 				79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */,
 				79737D3021133DE300407095 /* CharityViewController.swift */,
+				79737D3221133F4D00407095 /* CharityTableViewCell.swift */,
 			);
 			path = Marat;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				FFC210B92110B0AA00C99671 /* CollectionViewCell.swift in Sources */,
 				FFC2108E210F3BF200C99671 /* AppDelegate.swift in Sources */,
 				FFC210C121122C1100C99671 /* AnnouncementsCollectionViewCell.swift in Sources */,
+				79737D3321133F4D00407095 /* CharityTableViewCell.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
 				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,
