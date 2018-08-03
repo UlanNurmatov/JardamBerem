@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainScreenViewController: UIViewController, UICollectionViewDataSource {
+class MainScreenViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -19,7 +19,7 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidLoad()
         collectionView.dataSource = self
         announcementsCollectionView.dataSource = self
-       
+        collectionView.delegate = self
         
 
     }
@@ -42,6 +42,10 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
             cell.setAnnouncement(announcement: DataManager.manager.announcements![indexPath.item])
             return cell
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(DataManager.manager.categories![indexPath.item].category_name!)
     }
    
 }
