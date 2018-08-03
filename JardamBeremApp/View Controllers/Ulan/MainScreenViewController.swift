@@ -20,8 +20,8 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
         collectionView.dataSource = self
         announcementsCollectionView.dataSource = self
         collectionView.delegate = self
-        
-
+        announcementsCollectionView.delegate = self
+    
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -45,10 +45,19 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(DataManager.manager.categories![indexPath.item].category_name!)
+        if (collectionView == self.collectionView) {
         let id = DataManager.manager.categories![indexPath.item].id!
         ServerManager.shared.getAnnouncements(categoryId: id, completion: updateAnnouncements, error: printError)
+        } else {
+            let sb = UIStoryboard(name: "UlanStoryboard", bundle: nil)
+            let vc = sb.instantiateViewController(withIdentifier: "AnnouncementDetails") as! AnnouncementDetailsView
+            
+            let chosenAnnouncement = DataManager.manager.announcements![indexPath.item]
+            vc.chosenAnnouncement = chosenAnnouncement
+            show(vc, sender: self)
         }
+    }
+    
     func updateAnnouncements(announcements : AnnouncementsResults) {
         datamanager.announcements = announcements.results
         self.announcementsCollectionView.reloadData()
