@@ -13,6 +13,7 @@
 		79737D3121133DE300407095 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3021133DE300407095 /* CharityViewController.swift */; };
 		79737D3321133F4D00407095 /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3221133F4D00407095 /* CharityTableViewCell.swift */; };
 		79737D3521134EAA00407095 /* DetailCharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3421134EAA00407095 /* DetailCharityViewController.swift */; };
+		79A7314F2114A01600E9632B /* FeedBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A7314E2114A01600E9632B /* FeedBack.swift */; };
 		79B8D7B22110338000DEAE5C /* MaratStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */; };
 		79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */; };
 		79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */; };
@@ -45,6 +46,7 @@
 		79737D3021133DE300407095 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
 		79737D3221133F4D00407095 /* CharityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		79737D3421134EAA00407095 /* DetailCharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCharityViewController.swift; path = "JardamBeremApp/View Controllers/Marat/DetailCharityViewController.swift"; sourceTree = SOURCE_ROOT; };
+		79A7314E2114A01600E9632B /* FeedBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBack.swift; sourceTree = "<group>"; };
 		79B8D7B12110338000DEAE5C /* MaratStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MaratStoryboard.storyboard; sourceTree = "<group>"; };
 		79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityChooseViewController.swift; sourceTree = "<group>"; };
 		79B8D7BB2110A4DB00DEAE5C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				79026A5C210F549900953146 /* Categories.swift */,
 				FFC210C22112429A00C99671 /* Announcement.swift */,
 				FFC210AF210F79A700C99671 /* Charities.swift */,
+				79A7314E2114A01600E9632B /* FeedBack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
 				79737D3521134EAA00407095 /* DetailCharityViewController.swift in Sources */,
 				79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */,
+				79A7314F2114A01600E9632B /* FeedBack.swift in Sources */,
 				FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */,
 				FFC210B421108A3500C99671 /* Forum.swift in Sources */,
 			);
