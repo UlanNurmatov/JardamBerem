@@ -92,12 +92,12 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
-    func sendReview(review : Review) {
+    func sendReview(review : Review, completion: @escaping () -> (), error: @escaping (String) -> ()) {
         
-        self.post(endpoint: Constants.Network.EndPoint.reviewPost, parameters: review.reviewToDictionary(), completion: { (responce) in
-            
+        self.post(endpoint: Constants.Network.EndPoint.reviewPost, parameters: review.reviewToDictionary(), completion: { (data) in
+            completion()
         }) { (errorMessage) in
-            
+            print(error)
         }
     }
 }
