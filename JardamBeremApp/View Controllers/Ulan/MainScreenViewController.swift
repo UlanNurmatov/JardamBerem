@@ -13,7 +13,7 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var announcementsCollectionView: UICollectionView!
-
+    var datamanager = DataManager.manager
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +46,15 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(DataManager.manager.categories![indexPath.item].category_name!)
+        let id = DataManager.manager.categories![indexPath.item].id!
+        ServerManager.shared.getAnnouncements(categoryId: id, completion: updateAnnouncements, error: printError)
+        }
+    func updateAnnouncements(announcements : AnnouncementsResults) {
+        datamanager.announcements = announcements.results
+        self.announcementsCollectionView.reloadData()
     }
-   
+    func printError(error : String) {
+        print(error)
 }
+}
+

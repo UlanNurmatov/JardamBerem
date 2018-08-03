@@ -77,8 +77,8 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func getAnnouncements(completion: @escaping (AnnouncementsResults) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.announcements, completion: { (data) in
+    func getAnnouncements(categoryId: Int, completion: @escaping (AnnouncementsResults) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: "\(Constants.Network.EndPoint.announcements)\(categoryId)/announcements", completion: { (data) in
             do {
                 guard let  data = data else { return }
                 let result = try JSONDecoder().decode(AnnouncementsResults.self, from: data)
