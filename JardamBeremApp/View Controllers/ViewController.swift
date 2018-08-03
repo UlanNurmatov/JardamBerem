@@ -15,20 +15,12 @@ class ViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCities(completion : printCities, error: printError)
         ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
         ServerManager.shared.getCharities(completion : printCharities, error: printError)
         ServerManager.shared.getForum(completion : printForum, error: printError)
         ServerManager.shared.getAnnouncements(completion: printAnnouncements, error: printError)
     }
     
-    func printCities(cities : CityResult) {
-        for i in cities.results {
-            print(i.city_name ?? "empty")
-        }
-        datamanager.cities = cities.results
-        
-    }
     func printCategories(categories : CategoryResult){
         for c in categories.results! {
             print(c.category_name ?? "empty")

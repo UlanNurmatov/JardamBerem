@@ -16,7 +16,7 @@ class Announcement: Decodable {
     var id: Int?
     var city: Int?
     var category: Int?
-    var isNeeded: Int?
+    var isNeeded: Bool?
     var title: String?
     var description: String?
     var number: String?

@@ -44,6 +44,4 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource {
         }
     }
    
-
-   
 }
