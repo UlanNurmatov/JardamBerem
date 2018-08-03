@@ -320,40 +320,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36B-Ww-9uy">
-                                <rect key="frame" x="16" y="310" width="343" height="337"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-mE-59g">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Title" id="U5F-vQ-feL">
-                                        <barButtonItem key="leftBarButtonItem" image="back-2" style="plain" id="7XJ-Uq-t62"/>
+                                        <barButtonItem key="leftBarButtonItem" image="back-2" style="plain" id="7XJ-Uq-t62">
+                                            <connections>
+                                                <action selector="backButtonTapped" destination="ghg-3V-oXe" id="8IY-HH-DbS"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-xI-BhV">
+                                <rect key="frame" x="16" y="318" width="343" height="329"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="36B-Ww-9uy" firstAttribute="leading" secondItem="gBi-Hc-Smq" secondAttribute="leading" constant="16" id="9Gl-ii-rHG"/>
+                            <constraint firstItem="gBi-Hc-Smq" firstAttribute="bottom" secondItem="Xkb-xI-BhV" secondAttribute="bottom" constant="20" id="9pM-hn-ohk"/>
+                            <constraint firstItem="gBi-Hc-Smq" firstAttribute="trailing" secondItem="Xkb-xI-BhV" secondAttribute="trailing" constant="16" id="C1Q-f2-0Bo"/>
                             <constraint firstItem="bah-Oj-ueo" firstAttribute="leading" secondItem="gBi-Hc-Smq" secondAttribute="leading" constant="16" id="IGR-x5-vr4"/>
-                            <constraint firstItem="gBi-Hc-Smq" firstAttribute="trailing" secondItem="36B-Ww-9uy" secondAttribute="trailing" constant="16" id="LVO-iF-bj8"/>
-                            <constraint firstItem="gBi-Hc-Smq" firstAttribute="bottom" secondItem="36B-Ww-9uy" secondAttribute="bottom" constant="20" id="bg8-bx-Xty"/>
+                            <constraint firstItem="Xkb-xI-BhV" firstAttribute="leading" secondItem="gBi-Hc-Smq" secondAttribute="leading" constant="16" id="TZT-rp-oJ5"/>
                             <constraint firstItem="amG-X3-1Dw" firstAttribute="top" secondItem="bah-Oj-ueo" secondAttribute="bottom" constant="8" id="cbf-2R-REX"/>
                             <constraint firstItem="amG-X3-1Dw" firstAttribute="leading" secondItem="gBi-Hc-Smq" secondAttribute="leading" constant="16" id="gJq-l6-usX"/>
+                            <constraint firstItem="Xkb-xI-BhV" firstAttribute="top" secondItem="amG-X3-1Dw" secondAttribute="bottom" constant="16" id="lRP-V7-cLW"/>
                             <constraint firstItem="bah-Oj-ueo" firstAttribute="top" secondItem="gBi-Hc-Smq" secondAttribute="top" constant="70" id="oq1-us-zgb"/>
-                            <constraint firstItem="36B-Ww-9uy" firstAttribute="top" secondItem="amG-X3-1Dw" secondAttribute="bottom" constant="8" id="paR-GA-Uln"/>
                             <constraint firstItem="gBi-Hc-Smq" firstAttribute="trailing" secondItem="bah-Oj-ueo" secondAttribute="trailing" constant="16" id="wNh-D0-euJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gBi-Hc-Smq"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionView" destination="Xkb-xI-BhV" id="qvy-QC-ILK"/>
+                        <outlet property="imgView" destination="bah-Oj-ueo" id="0Il-6G-Sff"/>
+                        <outlet property="titleLabel" destination="amG-X3-1Dw" id="kqI-cU-w9E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQe-GM-jBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3247" y="170"/>
+            <point key="canvasLocation" x="3005.5999999999999" y="169.56521739130437"/>
         </scene>
     </scenes>
     <resources>

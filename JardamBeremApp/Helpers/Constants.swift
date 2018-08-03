@@ -17,6 +17,7 @@ struct Constants {
             static let charities = "charity_event/"
             static let forum = "forum/"
             static let announcements = "api/categories/2/announcements"
+            static let reviewPost = "review/"
         }
         
         struct ErrorMessage {

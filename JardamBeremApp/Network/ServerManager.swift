@@ -92,4 +92,12 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    func sendReview(review : Review) {
+        
+        self.post(endpoint: Constants.Network.EndPoint.reviewPost, parameters: review.reviewToDictionary(), completion: { (responce) in
+            
+        }) { (errorMessage) in
+            
+        }
+    }
 }
