@@ -77,8 +77,8 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func getAnnouncements(completion: @escaping (AnnouncementsResults) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: Constants.Network.EndPoint.announcements, completion: { (data) in
+    func getAnnouncements(categoryId: Int, completion: @escaping (AnnouncementsResults) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: "\(Constants.Network.EndPoint.announcements)\(categoryId)/announcements", completion: { (data) in
             do {
                 guard let  data = data else { return }
                 let result = try JSONDecoder().decode(AnnouncementsResults.self, from: data)
@@ -92,12 +92,12 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
-    func sendReview(review : Review) {
+    func sendReview(review : Review, completion: @escaping () -> (), error: @escaping (String) -> ()) {
         
-        self.post(endpoint: Constants.Network.EndPoint.reviewPost, parameters: review.reviewToDictionary(), completion: { (responce) in
-            
+        self.post(endpoint: Constants.Network.EndPoint.reviewPost, parameters: review.reviewToDictionary(), completion: { (data) in
+            completion()
         }) { (errorMessage) in
-            
+            print(error)
         }
     }
 }

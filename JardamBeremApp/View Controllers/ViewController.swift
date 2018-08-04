@@ -18,7 +18,7 @@ class ViewController : UIViewController {
         ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
         ServerManager.shared.getCharities(completion : printCharities, error: printError)
         ServerManager.shared.getForum(completion : printForum, error: printError)
-        ServerManager.shared.getAnnouncements(completion: printAnnouncements, error: printError)
+        ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: printError)
     }
     
     func printCategories(categories : CategoryResult){
