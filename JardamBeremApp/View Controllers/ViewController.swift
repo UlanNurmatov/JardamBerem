@@ -81,6 +81,11 @@ class ViewController : UIViewController {
         let vc = board.instantiateViewController(withIdentifier: "Review")
         self.show(vc, sender: self)
     }
+    @IBAction func ForumButtonTapped() {
+        let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "Forum")
+        self.show(vc, sender: self)
+    }
     
 }
 

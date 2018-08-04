@@ -47,7 +47,7 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if (collectionView == self.collectionView) {
         let id = DataManager.manager.categories![indexPath.item].id!
-        ServerManager.shared.getAnnouncements(categoryId: id, completion: updateAnnouncements, error: printError)
+        ServerManager.shared.getAnnouncements(categoryId: id, completion: updateAnnouncements, error: showError)
         } else {
             let sb = UIStoryboard(name: "UlanStoryboard", bundle: nil)
             let vc = sb.instantiateViewController(withIdentifier: "AnnouncementDetails") as! AnnouncementDetailsView
@@ -62,8 +62,5 @@ class MainScreenViewController: UIViewController, UICollectionViewDataSource, UI
         datamanager.announcements = announcements.results
         self.announcementsCollectionView.reloadData()
     }
-    func printError(error : String) {
-        print(error)
-}
 }
 
