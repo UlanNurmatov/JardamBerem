@@ -203,7 +203,7 @@
         <!--Review View Controller-->
         <scene sceneID="GVF-Gf-7WX">
             <objects>
-                <viewController id="Acm-kD-988" customClass="ReviewViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Review" id="Acm-kD-988" customClass="ReviewViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cLV-zh-B7V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,6 @@
                                 <rect key="frame" x="106" y="269" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magproidscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

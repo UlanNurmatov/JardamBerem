@@ -70,6 +70,11 @@ class ViewController : UIViewController {
         let vc = board.instantiateInitialViewController()
         self.show(vc!, sender: self)
     }
+    @IBAction func ReviewButtonTapped() {
+        let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "Review")
+        self.show(vc, sender: self)
+    }
     
 }
 

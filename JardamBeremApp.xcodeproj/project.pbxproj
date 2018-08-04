@@ -38,6 +38,7 @@
 		FFC210C32112429A00C99671 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC210C22112429A00C99671 /* Announcement.swift */; };
 		FFF6B51D2114E93F00B57440 /* AnnouncementDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B51C2114E93F00B57440 /* AnnouncementDetailsView.swift */; };
 		FFF6B51F21150AEF00B57440 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B51E21150AEF00B57440 /* ReviewViewController.swift */; };
+		FFF6B5212115658500B57440 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B5202115658500B57440 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		FFC210C22112429A00C99671 /* Announcement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		FFF6B51C2114E93F00B57440 /* AnnouncementDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementDetailsView.swift; sourceTree = "<group>"; };
 		FFF6B51E21150AEF00B57440 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		FFF6B5202115658500B57440 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				FFC210AB210F3D1B00C99671 /* Constants.swift */,
+				FFF6B5202115658500B57440 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
 				79737D3521134EAA00407095 /* DetailCharityViewController.swift in Sources */,
 				79B8D7BA2110A30600DEAE5C /* CityChooseViewController.swift in Sources */,
+				FFF6B5212115658500B57440 /* Extensions.swift in Sources */,
 				FFF6B51D2114E93F00B57440 /* AnnouncementDetailsView.swift in Sources */,
 				79A7314F2114A01600E9632B /* Review.swift in Sources */,
 				FFC210AC210F3D1B00C99671 /* Constants.swift in Sources */,
