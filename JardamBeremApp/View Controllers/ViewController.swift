@@ -15,10 +15,10 @@ class ViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
-        ServerManager.shared.getCharities(completion : printCharities, error: printError)
-        ServerManager.shared.getForum(completion : printForum, error: printError)
-        ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: printError)
+        ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: showError)
+        ServerManager.shared.getCharities(completion : printCharities, error: showError)
+        ServerManager.shared.getForum(completion : printForum, error: showError)
+        ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: showError)
     }
     
     func printCategories(categories : CategoryResult){
@@ -55,9 +55,6 @@ class ViewController : UIViewController {
         datamanager.announcements = announcements.results
     }
     
-    func printError(error : String) {
-        print(error)
-    }
     
     @IBAction func MaratButtonTapped() {
         let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)
