@@ -15,11 +15,12 @@ class ViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCities(completion: printCities, error: printError)
-        ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
-        ServerManager.shared.getCharities(completion : printCharities, error: printError)
-        ServerManager.shared.getForum(completion : printForum, error: printError)
-        ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: printError)
+        ServerManager.shared.getCities(completion: printCities, error: showError)
+        ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: showError)
+        ServerManager.shared.getCharities(completion : printCharities, error: showError)
+        ServerManager.shared.getForum(completion : printForum, error: showError)
+        ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: showError)
+
     }
     
     func printCities (cities : CityResult) {
@@ -63,9 +64,6 @@ class ViewController : UIViewController {
         DataManager.manager.announcements = announcements.results
     }
     
-    func printError(error : String) {
-        print(error)
-    }
     
     @IBAction func MaratButtonTapped() {
         let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)
@@ -77,6 +75,11 @@ class ViewController : UIViewController {
         let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
         let vc = board.instantiateInitialViewController()
         self.show(vc!, sender: self)
+    }
+    @IBAction func ReviewButtonTapped() {
+        let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "Review")
+        self.show(vc, sender: self)
     }
     
 }

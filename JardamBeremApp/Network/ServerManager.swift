@@ -97,7 +97,7 @@ class ServerManager: HTTPRequestManager {
         self.post(endpoint: Constants.Network.EndPoint.reviewPost, parameters: review.reviewToDictionary(), completion: { (data) in
             completion()
         }) { (errorMessage) in
-            print(error)
+            error(errorMessage)
         }
     }
 }

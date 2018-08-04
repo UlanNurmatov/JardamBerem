@@ -23,7 +23,11 @@ class ReviewViewController: UIViewController {
 
     @IBAction func sendReviewTapped() {
         let feedbackModel = Review(email: emailField.text!, reviewText: reviewField.text!)
-        //ServerManager.shared.sendReview(review: feedbackModel, completion: success(), error: <#T##(String) -> ()#>)
+        ServerManager.shared.sendReview(review: feedbackModel, completion: success, error: showError)
+        
+    }
+    func success() {
+        showSucsessAlert(withTitle: "Отзыв", andMessage: "Ваш отзыв успешно отправлен")
     }
     
     
