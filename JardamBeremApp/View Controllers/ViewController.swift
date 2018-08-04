@@ -11,14 +11,22 @@ import UIKit
 class ViewController : UIViewController {
     
     var exampleCityId = "1"
-    var datamanager = DataManager.manager
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ServerManager.shared.getCities(completion: printCities, error: printError)
         ServerManager.shared.getCategories(cityID: self.exampleCityId, completion: printCategories, error: printError)
         ServerManager.shared.getCharities(completion : printCharities, error: printError)
         ServerManager.shared.getForum(completion : printForum, error: printError)
         ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: printError)
+    }
+    
+    func printCities (cities : CityResult) {
+        for c in cities.results {
+            print(c.city_name ?? "City is emty")
+        }
+        DataManager.manager.cities = cities.results
     }
     
     func printCategories(categories : CategoryResult){
@@ -26,14 +34,14 @@ class ViewController : UIViewController {
             print(c.category_name ?? "empty")
             print(c.category_imgPath ?? "empty")
         }
-        datamanager.categories = categories.results
+        DataManager.manager.categories = categories.results
     }
     
     func printCharities(charities : CharityResults) {
         for i in charities.results {
             print(i.title ?? "empty")
         }
-        datamanager.charities = charities.results
+        DataManager.manager.charities = charities.results
         
     }
     
@@ -42,7 +50,7 @@ class ViewController : UIViewController {
             print(i.nickName ?? "empty")
             print(i.comment ?? "empty")
         }
-        datamanager.forum = forum.results
+        DataManager.manager.forum = forum.results
     }
     
     func printAnnouncements(announcements : AnnouncementsResults) {
@@ -52,7 +60,7 @@ class ViewController : UIViewController {
             print("DESCRIPTION")
             print(i.description ?? "empty")
         }
-        datamanager.announcements = announcements.results
+        DataManager.manager.announcements = announcements.results
     }
     
     func printError(error : String) {

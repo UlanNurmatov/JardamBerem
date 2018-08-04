@@ -10,10 +10,16 @@ import UIKit
 
 class CityChooseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    @IBOutlet weak var tableView : UITableView!
+    @IBOutlet weak var continueButton : UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+        continueButton.isHidden = true
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,6 +33,7 @@ class CityChooseViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         DataManager.manager.selectedCity = DataManager.manager.cities![indexPath.row]
+        self.continueButton.isHidden = false
     }
     
 }

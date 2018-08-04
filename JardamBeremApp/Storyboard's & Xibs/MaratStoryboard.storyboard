@@ -25,7 +25,7 @@
                                     <color key="titleColor" red="1" green="0.38014214819999997" blue="0.59309690410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QWT-bQ-wT3" kind="show" id="LxF-dz-MIK"/>
+                                    <segue destination="KR9-Q2-7fT" kind="show" id="LxF-dz-MIK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cогласен(-на) с Политикой конфеденциальности и Соглашением" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1D-K2-9Pu">
@@ -52,14 +52,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBV-Uh-HO4">
-                                <rect key="frame" x="160" y="446" width="50" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Charity"/>
-                                <connections>
-                                    <segue destination="bwc-AQ-9LR" kind="show" id="WMU-2i-gpF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
@@ -85,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCG-Mc-ZrD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="169.56521739130437"/>
+            <point key="canvasLocation" x="382" y="170"/>
         </scene>
         <!--Language Choose View Controller-->
         <scene sceneID="Puz-ti-RGf">
@@ -96,7 +88,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOq-uD-O5m">
-                                <rect key="frame" x="16" y="36" width="30" height="30"/>
+                                <rect key="frame" x="16" y="80" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="gH9-A6-qWj"/>
                                     <constraint firstAttribute="height" constant="30" id="t1p-tn-ywT"/>
@@ -104,7 +96,7 @@
                                 <state key="normal" image="menu"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Язык" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQ5-37-uE2">
-                                <rect key="frame" x="164.5" y="39" width="46" height="24"/>
+                                <rect key="frame" x="164.5" y="83" width="46" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -144,6 +136,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Esp-gO-2aT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c3n-zP-Ln2"/>
                     <connections>
                         <outlet property="continueButton" destination="v18-c7-Zdr" id="MIj-Lk-iP1"/>
                         <outlet property="tableView" destination="6Ho-U9-Cxf" id="6kS-vu-SP0"/>
@@ -151,7 +144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h93-Lg-TG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="170"/>
+            <point key="canvasLocation" x="1880.8" y="169.56521739130437"/>
         </scene>
         <!--City Choose View Controller-->
         <scene sceneID="hzv-Es-TRO">
@@ -162,7 +155,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afi-LS-oK2">
-                                <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <rect key="frame" x="16" y="72" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="oMl-tS-9MA"/>
                                     <constraint firstAttribute="height" constant="30" id="qYE-QZ-zyX"/>
@@ -170,7 +163,7 @@
                                 <state key="normal" image="menu"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jN-vf-89M">
-                                <rect key="frame" x="160.5" y="31" width="55" height="24"/>
+                                <rect key="frame" x="160.5" y="75" width="55" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -200,6 +193,9 @@
                                     <constraint firstAttribute="height" constant="30" id="P1G-c4-WzQ"/>
                                 </constraints>
                                 <state key="normal" title="Готово"/>
+                                <connections>
+                                    <segue destination="bwc-AQ-9LR" kind="show" id="5Ul-yb-riU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -216,10 +212,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0UQ-eF-Ie3"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="Xp4-bz-O3K" id="pxt-F8-oOm"/>
+                        <outlet property="tableView" destination="dp6-dl-hwf" id="LRU-gc-ein"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cY-Gd-Qaj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1649" y="170"/>
+            <point key="canvasLocation" x="2588" y="169.56521739130437"/>
         </scene>
         <!--Charity View Controller-->
         <scene sceneID="AGb-Iu-iNn">
@@ -230,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HbI-B0-b6f">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="186" id="aob-4q-H3l" customClass="CharityTableViewCell" customModule="JardamBeremApp" customModuleProvider="target">
@@ -298,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivD-ve-OcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2320.8000000000002" y="169.56521739130437"/>
+            <point key="canvasLocation" x="3260" y="169.56521739130437"/>
         </scene>
         <!--Detail Charity View Controller-->
         <scene sceneID="cD5-dF-lmv">
@@ -320,19 +320,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6tB-mE-59g">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem id="U5F-vQ-feL">
-                                        <barButtonItem key="leftBarButtonItem" image="back-2" style="plain" id="7XJ-Uq-t62">
-                                            <connections>
-                                                <action selector="backButtonTapped" destination="ghg-3V-oXe" id="8IY-HH-DbS"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-xI-BhV">
                                 <rect key="frame" x="16" y="318" width="343" height="329"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -363,11 +350,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQe-GM-jBN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3005.5999999999999" y="169.56521739130437"/>
+            <point key="canvasLocation" x="3944.8000000000002" y="169.56521739130437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LZC-HT-XdF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KR9-Q2-7fT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fh9-Vi-pLm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QWT-bQ-wT3" kind="relationship" relationship="rootViewController" id="CRQ-tQ-uyg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5V-Ei-VMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="170"/>
         </scene>
     </scenes>
     <resources>
-        <image name="back-2" width="32" height="32"/>
         <image name="hamburger (3)" width="128" height="128"/>
         <image name="menu" width="64" height="64"/>
         <image name="notAgreed" width="64" height="64"/>
