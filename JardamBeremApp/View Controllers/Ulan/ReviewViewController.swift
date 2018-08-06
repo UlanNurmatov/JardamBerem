@@ -23,8 +23,11 @@ class ReviewViewController: UIViewController {
 
     @IBAction func sendReviewTapped() {
         let feedbackModel = Review(email: emailField.text!, reviewText: reviewField.text!)
+        if !emailField.hasText || !reviewField.hasText {
+            showError(message: "Заполните все поля")
+        } else {
         ServerManager.shared.sendReview(review: feedbackModel, completion: success, error: showError)
-        
+        }
     }
     func success() {
         showSucsessAlert(withTitle: "Отзыв", andMessage: "Ваш отзыв успешно отправлен")
