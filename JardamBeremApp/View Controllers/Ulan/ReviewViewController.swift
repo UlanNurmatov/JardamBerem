@@ -8,16 +8,17 @@
 
 import UIKit
 
-class ReviewViewController: UIViewController {
+class ReviewViewController: UIViewController, UITextViewDelegate {
     
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var reviewField: UITextView!
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var review: UILabel!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        reviewField.delegate = self
        
     }
 
