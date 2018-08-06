@@ -10,6 +10,7 @@
 		17C1517C69F0FD42F8408F14 /* Pods_JardamBeremApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC1A2FF1DD4B6DAC6CA31581 /* Pods_JardamBeremApp.framework */; };
 		79026A5D210F549900953146 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A5C210F549900953146 /* Categories.swift */; };
 		79026A61210F6EA600953146 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79026A60210F6EA600953146 /* DataManager.swift */; };
+		794CFFAA211882A700A2B18D /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794CFFA9211882A700A2B18D /* SideMenuView.swift */; };
 		79737D3121133DE300407095 /* CharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3021133DE300407095 /* CharityViewController.swift */; };
 		79737D3321133F4D00407095 /* CharityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3221133F4D00407095 /* CharityTableViewCell.swift */; };
 		79737D3521134EAA00407095 /* DetailCharityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79737D3421134EAA00407095 /* DetailCharityViewController.swift */; };
@@ -48,6 +49,7 @@
 		73D090A0878FBB02A77AFE11 /* Pods-JardamBeremApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JardamBeremApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-JardamBeremApp/Pods-JardamBeremApp.release.xcconfig"; sourceTree = "<group>"; };
 		79026A5C210F549900953146 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		79026A60210F6EA600953146 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		794CFFA9211882A700A2B18D /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideMenuView.swift; path = "JardamBeremApp/View Controllers/Marat/SideMenuView.swift"; sourceTree = SOURCE_ROOT; };
 		79737D3021133DE300407095 /* CharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityViewController.swift; sourceTree = "<group>"; };
 		79737D3221133F4D00407095 /* CharityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityTableViewCell.swift; sourceTree = "<group>"; };
 		79737D3421134EAA00407095 /* DetailCharityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailCharityViewController.swift; path = "JardamBeremApp/View Controllers/Marat/DetailCharityViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -108,6 +110,7 @@
 		79B8D7B82110A2E500DEAE5C /* Marat */ = {
 			isa = PBXGroup;
 			children = (
+				794CFFA9211882A700A2B18D /* SideMenuView.swift */,
 				79B8D7B92110A30600DEAE5C /* CityChooseViewController.swift */,
 				79B8D7BF2110AF7700DEAE5C /* LanguageChooseViewController.swift */,
 				79B8D7BD2110AACF00DEAE5C /* ToRViewController.swift */,
@@ -361,6 +364,7 @@
 				79737D3321133F4D00407095 /* CharityTableViewCell.swift in Sources */,
 				FFC210A8210F3D0100C99671 /* HTTPStatusCode.swift in Sources */,
 				FFC210AE210F3D2A00C99671 /* Citites.swift in Sources */,
+				794CFFAA211882A700A2B18D /* SideMenuView.swift in Sources */,
 				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,
 				FFC210C32112429A00C99671 /* Announcement.swift in Sources */,
 				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
