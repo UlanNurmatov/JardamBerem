@@ -19,4 +19,5 @@ class DataManager {
     var charities : [Charity]?
     var forum : [ForumEntry]?
     var announcements : [Announcement]?
+    var info : [Info]?
 }

@@ -50,6 +50,14 @@
                                     <action selector="ForumButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ndc-PB-smK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrL-ea-B7v">
+                                <rect key="frame" x="148" y="451" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Information"/>
+                                <connections>
+                                    <action selector="InfoButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="t72-5g-XCm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

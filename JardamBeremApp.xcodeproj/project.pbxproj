@@ -43,6 +43,8 @@
 		FFF6B52321156FF900B57440 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B52221156FF900B57440 /* ForumViewController.swift */; };
 		FFF6B5252115709100B57440 /* ForumCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B5242115709100B57440 /* ForumCellCollectionViewCell.swift */; };
 		FFFAAEE921199BF700FE6E75 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEE821199BF700FE6E75 /* Info.swift */; };
+		FFFAAEED2119A20200FE6E75 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEEC2119A20200FE6E75 /* InfoViewController.swift */; };
+		FFFAAEEF2119A37300FE6E75 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEEE2119A37300FE6E75 /* InfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		FFF6B52221156FF900B57440 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		FFF6B5242115709100B57440 /* ForumCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		FFFAAEE821199BF700FE6E75 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		FFFAAEEC2119A20200FE6E75 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		FFFAAEEE2119A37300FE6E75 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 				FFF6B51E21150AEF00B57440 /* ReviewViewController.swift */,
 				FFF6B52221156FF900B57440 /* ForumViewController.swift */,
 				FFF6B5242115709100B57440 /* ForumCellCollectionViewCell.swift */,
+				FFFAAEEC2119A20200FE6E75 /* InfoViewController.swift */,
+				FFFAAEEE2119A37300FE6E75 /* InfoCell.swift */,
 			);
 			path = Ulan;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 				FFF6B52321156FF900B57440 /* ForumViewController.swift in Sources */,
 				FFFAAEE921199BF700FE6E75 /* Info.swift in Sources */,
 				79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */,
+				FFFAAEED2119A20200FE6E75 /* InfoViewController.swift in Sources */,
 				79026A5D210F549900953146 /* Categories.swift in Sources */,
 				79B8D7C02110AF7700DEAE5C /* LanguageChooseViewController.swift in Sources */,
 				79737D3121133DE300407095 /* CharityViewController.swift in Sources */,
@@ -372,6 +379,7 @@
 				79B8D7BE2110AACF00DEAE5C /* ToRViewController.swift in Sources */,
 				FFC210C32112429A00C99671 /* Announcement.swift in Sources */,
 				FFC210A6210F3CF200C99671 /* HTTPRequestManager.swift in Sources */,
+				FFFAAEEF2119A37300FE6E75 /* InfoCell.swift in Sources */,
 				FFF6B51F21150AEF00B57440 /* ReviewViewController.swift in Sources */,
 				79026A61210F6EA600953146 /* DataManager.swift in Sources */,
 				FFF6B5252115709100B57440 /* ForumCellCollectionViewCell.swift in Sources */,

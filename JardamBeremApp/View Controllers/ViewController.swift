@@ -20,7 +20,7 @@ class ViewController : UIViewController {
         ServerManager.shared.getCharities(completion : printCharities, error: showError)
         ServerManager.shared.getForum(completion : printForum, error: showError)
         ServerManager.shared.getAnnouncements(categoryId: 1, completion: printAnnouncements, error: showError)
-
+        ServerManager.shared.getInfo(completion: getInfo, error: showError)
     }
     
     func printCities (cities : CityResult) {
@@ -64,6 +64,9 @@ class ViewController : UIViewController {
         DataManager.manager.announcements = announcements.results
     }
     
+    func getInfo(info : InfoResults) {
+        DataManager.manager.info = info.results
+    }
     
     @IBAction func MaratButtonTapped() {
         let board = UIStoryboard(name: "MaratStoryboard", bundle: nil)
@@ -84,6 +87,11 @@ class ViewController : UIViewController {
     @IBAction func ForumButtonTapped() {
         let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
         let vc = board.instantiateViewController(withIdentifier: "Forum")
+        self.show(vc, sender: self)
+    }
+    @IBAction func InfoButtonTapped() {
+        let board = UIStoryboard(name: "UlanStoryboard", bundle: nil)
+        let vc = board.instantiateViewController(withIdentifier: "Info")
         self.show(vc, sender: self)
     }
     
