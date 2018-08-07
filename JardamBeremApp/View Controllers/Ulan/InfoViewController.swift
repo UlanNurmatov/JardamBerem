@@ -16,7 +16,8 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
-        table.rowHeight = 200
+        table.rowHeight = 150
+        table.backgroundColor = UIColor.lightGray
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,8 +37,17 @@ class InfoViewController: UIViewController, UITableViewDataSource, UITableViewDe
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "InfoId", for: indexPath) as! InfoCell
         cell.setInfoCell(info: DataManager.manager.info![indexPath.row])
+        cell.backgroundColor = UIColor.white
         return cell
     }
-
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "UlanStoryboard", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "InfoDetails") as! InfoDetailsViewController
+        
+        let tappedInfo = DataManager.manager.info![indexPath.item]
+        vc.info = tappedInfo
+        show(vc, sender: self)
+    }
 
 }

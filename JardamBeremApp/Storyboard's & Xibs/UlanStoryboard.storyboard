@@ -323,9 +323,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6wV-w0-Aey">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6wV-w0-Aey">
                                 <rect key="frame" x="0.0" y="41" width="375" height="626"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoId" rowHeight="142" id="2V2-rY-iQL" customClass="InfoCell" customModule="JardamBeremApp" customModuleProvider="target">
@@ -364,6 +363,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6wV-w0-Aey" firstAttribute="trailing" secondItem="T3H-pG-RRy" secondAttribute="trailing" id="Dwv-jG-rhb"/>
+                            <constraint firstItem="6wV-w0-Aey" firstAttribute="top" secondItem="T3H-pG-RRy" secondAttribute="top" constant="21" id="nav-Bd-NPu"/>
+                            <constraint firstItem="6wV-w0-Aey" firstAttribute="bottom" secondItem="T3H-pG-RRy" secondAttribute="bottom" id="nch-pe-ns6"/>
+                            <constraint firstItem="6wV-w0-Aey" firstAttribute="leading" secondItem="T3H-pG-RRy" secondAttribute="leading" id="yor-02-Smk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T3H-pG-RRy"/>
                     </view>
                     <connections>
@@ -373,6 +378,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8L2-mb-sla" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2564" y="-971.06446776611699"/>
+        </scene>
+        <!--Info Details View Controller-->
+        <scene sceneID="avm-mp-l8N">
+            <objects>
+                <viewController storyboardIdentifier="InfoDetails" id="lch-EC-oSq" customClass="InfoDetailsViewController" customModule="JardamBeremApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DzO-tW-9hB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0D-zc-1Wj">
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="53R-tc-eww" firstAttribute="bottom" secondItem="Q0D-zc-1Wj" secondAttribute="bottom" id="7VB-VJ-DEO"/>
+                            <constraint firstItem="Q0D-zc-1Wj" firstAttribute="leading" secondItem="53R-tc-eww" secondAttribute="leading" id="Cx2-Zq-6oX"/>
+                            <constraint firstItem="53R-tc-eww" firstAttribute="trailing" secondItem="Q0D-zc-1Wj" secondAttribute="trailing" id="R9v-Jc-cqG"/>
+                            <constraint firstItem="Q0D-zc-1Wj" firstAttribute="top" secondItem="53R-tc-eww" secondAttribute="top" constant="20" id="x5O-sR-n0g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="53R-tc-eww"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewForHtml" destination="Q0D-zc-1Wj" id="COx-NX-9RT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="db7-dk-Rds" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="-967"/>
         </scene>
     </scenes>
 </document>
