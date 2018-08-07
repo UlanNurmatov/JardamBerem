@@ -42,6 +42,7 @@
 		FFF6B5212115658500B57440 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B5202115658500B57440 /* Extensions.swift */; };
 		FFF6B52321156FF900B57440 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B52221156FF900B57440 /* ForumViewController.swift */; };
 		FFF6B5252115709100B57440 /* ForumCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6B5242115709100B57440 /* ForumCellCollectionViewCell.swift */; };
+		FFFAAEE921199BF700FE6E75 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEE821199BF700FE6E75 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		FFF6B5202115658500B57440 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FFF6B52221156FF900B57440 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		FFF6B5242115709100B57440 /* ForumCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFFAAEE821199BF700FE6E75 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				FFC210C22112429A00C99671 /* Announcement.swift */,
 				FFC210AF210F79A700C99671 /* Charities.swift */,
 				79A7314E2114A01600E9632B /* Review.swift */,
+				FFFAAEE821199BF700FE6E75 /* Info.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				FFC210AA210F3D0D00C99671 /* ServerManager.swift in Sources */,
 				FFC210BD2110B3CC00C99671 /* MainScreenViewController.swift in Sources */,
 				FFF6B52321156FF900B57440 /* ForumViewController.swift in Sources */,
+				FFFAAEE921199BF700FE6E75 /* Info.swift in Sources */,
 				79B8D7BC2110A4DB00DEAE5C /* InitialViewController.swift in Sources */,
 				79026A5D210F549900953146 /* Categories.swift in Sources */,
 				79B8D7C02110AF7700DEAE5C /* LanguageChooseViewController.swift in Sources */,
